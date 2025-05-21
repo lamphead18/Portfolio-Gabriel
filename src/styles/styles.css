@@ -1,0 +1,51 @@
+@layer utilities {
+  .bg-background {
+    background-color: var(--color-background);
+  }
+
+  .text-text {
+    color: var(--color-text);
+  }
+
+  .text-muted {
+    color: var(--color-muted);
+  }
+
+  .bg-surface {
+    background-color: var(--color-surface);
+  }
+
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+
+  .bg-secondary {
+    background-color: var(--color-secondary);
+  }
+
+  .text-highlight {
+    color: var(--color-highlight);
+  }
+
+  .text-error {
+    color: var(--color-error);
+  }
+}
+
+@layer utilities {
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--color-highlight);
+    transition: width 0.3s ease, left 0.3s ease;
+    transform: translateX(-50%);
+  }
+
+  .nav-link:hover::after {
+    width: 80%;
+  }
+}
