@@ -1,54 +1,43 @@
-# React + TypeScript + Vite
+# 📘 Registro de Implementações - Portfólio Gabriel Franco
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-0f172a?style=for-the-badge&logo=tailwindcss&logoColor=38BDF8)
+![Framer Motion](https://img.shields.io/badge/Framer--Motion-black?style=for-the-badge&logo=framer&logoColor=white)
+![Lenis](https://img.shields.io/badge/Lenis-smooth--scrolling-7c3aed?style=for-the-badge)
+![React Scroll](https://img.shields.io/badge/React--Scroll-smooth--nav-blue?style=for-the-badge)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧩 Componentes implementados
 
-## Expanding the ESLint configuration
+### 🟡 Header (`src/components/layout/Header.tsx`)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Fixado no topo com efeito blur e gradiente
+- Scroll spy com destaque em amarelo na seção visível
+- Menu responsivo com animação hamburguer
+- Navegação feita com `react-scroll` e offset ajustado
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### 🟢 Home (`src/components/pages/Home.tsx`)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Hero simplificado com nome e descrição curta
+- Animações com Framer Motion e entrada suave
+- Links para GitHub, LinkedIn e botão para download de CV
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 🔵 Sobre (`src/components/sections/About.tsx`)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- Título central estilizado com gradiente e sublinhado
+- Dois cards com efeito glassmorphism + hover
+- Conteúdo baseado em experiência e stack atual
+
+## 📦 Dependências usadas
+
+- `framer-motion` para animações de entrada
+- `lenis` para smooth scrolling
+- `react-scroll` para navegação suave entre seções
+
+## 🧪 Próximas etapas
+
+- Seção Projetos com vitrine e hover
+- Footer com redes sociais e contato
+- SEO e estrutura de acessibilidade
